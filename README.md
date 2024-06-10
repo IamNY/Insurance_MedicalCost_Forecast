@@ -48,7 +48,7 @@
     ```
 
 4. **데이터 분리**:
-    - `MedicalCost` 열에 결측값이 있는 데이터를 테스트 세트로, 없는 데이터를 학습 세트로 분리합니다.
+    - `MedicalCost` 열에 결측값을 생성하여, 테스트 데이터 세트(MedicalCost 삭제) 와 학습 데이터 세트(MedicalCost 있음)를 분리합니다.
 
     ```python
     data_train = data_cleaned.dropna(subset=['MedicalCost'])
